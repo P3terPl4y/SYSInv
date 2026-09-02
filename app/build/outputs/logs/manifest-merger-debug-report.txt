@@ -55,6 +55,7 @@ MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /root/.gradle/cac
 MERGED from [androidx.startup:startup-runtime:1.1.1] /root/.gradle/caches/8.10.2/transforms/f4e0fdc204fc59813b83ace7a81088ac/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /root/.gradle/caches/8.10.2/transforms/c8e702712f4827fe27428da82c74e716/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /root/.gradle/caches/8.10.2/transforms/2ba8d2d21882375ad227212a825b48ad/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.multidex:multidex:2.0.1] /root/.gradle/caches/8.10.2/transforms/9c61867d43f27a243128a7c90f1fafe1/transformed/multidex-2.0.1/AndroidManifest.xml:17:1-22:12
 	package
 		INJECTED from /var/www/lucifer/SYSInv/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -212,6 +213,8 @@ MERGED from [androidx.tracing:tracing:1.0.0] /root/.gradle/caches/8.10.2/transfo
 MERGED from [androidx.tracing:tracing:1.0.0] /root/.gradle/caches/8.10.2/transforms/c8e702712f4827fe27428da82c74e716/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] /root/.gradle/caches/8.10.2/transforms/2ba8d2d21882375ad227212a825b48ad/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /root/.gradle/caches/8.10.2/transforms/2ba8d2d21882375ad227212a825b48ad/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.1] /root/.gradle/caches/8.10.2/transforms/9c61867d43f27a243128a7c90f1fafe1/transformed/multidex-2.0.1/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] /root/.gradle/caches/8.10.2/transforms/9c61867d43f27a243128a7c90f1fafe1/transformed/multidex-2.0.1/AndroidManifest.xml:20:5-43
 	android:targetSdkVersion
 		INJECTED from /var/www/lucifer/SYSInv/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
