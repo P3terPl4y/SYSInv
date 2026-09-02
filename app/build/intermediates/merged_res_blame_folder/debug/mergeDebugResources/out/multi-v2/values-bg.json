@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ejemplo.sysinv.app-mergeDebugResources-44:/values-bg/values-bg.xml",
+            "outputFile": "com.ejemplo.sysinv.app-mergeDebugResources-49:/values-bg/values-bg.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/8.10.2/transforms/c73bd4bf25cdf01490d547c6af680ccc/transformed/foundation-release/res/values-bg/values-bg.xml",

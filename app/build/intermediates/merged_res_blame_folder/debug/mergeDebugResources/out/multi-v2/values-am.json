@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ejemplo.sysinv.app-mergeDebugResources-44:/values-am/values-am.xml",
+            "outputFile": "com.ejemplo.sysinv.app-mergeDebugResources-49:/values-am/values-am.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/8.10.2/transforms/d1fae9d5bfb41eec43214bec707669d8/transformed/material3-release/res/values-am/values-am.xml",

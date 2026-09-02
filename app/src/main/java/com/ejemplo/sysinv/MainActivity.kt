@@ -3,14 +3,18 @@ package com.ejemplo.sysinv
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.Surface
 import androidx.compose.runtime.*
+import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.ejemplo.sysinv.data.local.AppDatabase
-import com.ejemplo.sysinv.data.local.Producto
+import com.ejemplo.sysinv.data.local.entities.Producto
 import com.ejemplo.sysinv.data.repository.ProductoRepository
 import com.ejemplo.sysinv.ui.screens.ProductoFormScreen
 import com.ejemplo.sysinv.ui.screens.ProductoListScreen
 import com.ejemplo.sysinv.ui.viewmodel.ProductoViewModel
+import com.ejemplo.sysinv.ui.theme.SYSInvTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,38 +23,43 @@ class MainActivity : ComponentActivity() {
         val repository = ProductoRepository(db.productoDao())
 
         setContent {
-            val viewModel: ProductoViewModel = viewModel(
-                factory = ProductoViewModelFactory(repository)
-            )
-            var showForm by remember { mutableStateOf(false) }
-            var productoEditar by remember { mutableStateOf<Producto?>(null) }
+            SYSInvTheme {
+                Surface(modifier = Modifier.fillMaxSize()) {
+                    val viewModel: ProductoViewModel = viewModel(
+                        factory = ProductoViewModelFactory(repository)
+                    )
+                    var showForm by remember { mutableStateOf(false) }
+                    var productoEditar by remember { mutableStateOf<Producto?>(null) }
 
-            if (showForm) {
-                ProductoFormScreen(
-                    viewModel = viewModel,
-                    productoEditar = productoEditar,
-                    onSave = {
-                        showForm = false
-                        productoEditar = null
+                    if (showForm) {
+                        ProductoFormScreen(
+                            viewModel = viewModel,
+                            productoEditar = productoEditar,
+                            onSave = {
+                                showForm = false
+                                productoEditar = null
+                            }
+                        )
+                    } else {
+                        ProductoListScreen(
+                            onAdd = {
+                                productoEditar = null
+                                showForm = true
+                            },
+                            onEdit = { producto ->
+                                productoEditar = producto
+                                showForm = true
+                            },
+                            viewModel = viewModel
+                        )
                     }
-                )
-            } else {
-                ProductoListScreen(
-                    onAdd = {
-                        productoEditar = null
-                        showForm = true
-                    },
-                    onEdit = { producto ->
-                        productoEditar = producto
-                        showForm = true
-                    },
-                    viewModel = viewModel
-                )
+                }
             }
         }
     }
 }
 
+// Factory para ViewModel
 class ProductoViewModelFactory(private val repository: ProductoRepository) : androidx.lifecycle.ViewModelProvider.Factory {
     override fun <T : androidx.lifecycle.ViewModel> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(ProductoViewModel::class.java)) {

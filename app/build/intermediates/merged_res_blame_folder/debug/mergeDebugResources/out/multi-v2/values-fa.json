@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.ejemplo.sysinv.app-mergeDebugResources-44:/values-fa/values-fa.xml",
+            "outputFile": "com.ejemplo.sysinv.app-mergeDebugResources-49:/values-fa/values-fa.xml",
             "map": [
                 {
                     "source": "/root/.gradle/caches/8.10.2/transforms/14b4d82812b4e803a53d882e3f4d0bc6/transformed/ui-release/res/values-fa/values-fa.xml",
