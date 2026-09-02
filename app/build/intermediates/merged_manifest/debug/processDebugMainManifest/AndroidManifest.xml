@@ -1,32 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ro.alexmamo.roomjetpackcompose"
+    package="com.ejemplo.sysinv"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="21"
-        android:targetSdkVersion="35" />
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
 
     <permission
-        android:name="ro.alexmamo.roomjetpackcompose.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.ejemplo.sysinv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="ro.alexmamo.roomjetpackcompose.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.ejemplo.sysinv.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
-        android:name="ro.alexmamo.roomjetpackcompose.RoomJetpackComposeApp"
-        android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
-        android:extractNativeLibs="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.RoomJetpackCompose" >
+        android:extractNativeLibs="false" >
         <activity
-            android:name="ro.alexmamo.roomjetpackcompose.presentation.MainActivity"
+            android:name="com.ejemplo.sysinv.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -35,14 +28,9 @@
             </intent-filter>
         </activity>
 
-        <service
-            android:name="androidx.room.MultiInstanceInvalidationService"
-            android:directBootAware="true"
-            android:exported="false" />
-
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="ro.alexmamo.roomjetpackcompose.androidx-startup"
+            android:authorities="com.ejemplo.sysinv.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
@@ -55,9 +43,10 @@
                 android:value="androidx.startup" />
         </provider>
 
-        <activity
-            android:name="androidx.activity.ComponentActivity"
-            android:exported="true" />
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
 
         <receiver
             android:name="androidx.profileinstaller.ProfileInstallReceiver"

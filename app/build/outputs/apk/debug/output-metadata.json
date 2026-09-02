@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "ro.alexmamo.roomjetpackcompose",
+  "applicationId": "com.ejemplo.sysinv",
   "variantName": "debug",
   "elements": [
     {
@@ -17,5 +17,5 @@
     }
   ],
   "elementType": "File",
-  "minSdkVersionForDexing": 21
+  "minSdkVersionForDexing": 24
 }

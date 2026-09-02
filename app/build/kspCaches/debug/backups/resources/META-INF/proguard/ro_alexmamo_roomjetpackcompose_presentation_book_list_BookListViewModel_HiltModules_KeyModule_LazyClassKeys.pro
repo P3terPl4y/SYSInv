@@ -1,1 +1,0 @@
--keep,allowobfuscation,allowshrinking class ro.alexmamo.roomjetpackcompose.presentation.book_list.BookListViewModel
