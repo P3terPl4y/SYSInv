@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background">#F5F5F5</color>
+    <color name="on_background">#000000</color>
+    <color name="on_surface">#000000</color>
+    <color name="primary">#1A237E</color>
+    <color name="primary_dark">#0D1445</color>
+    <color name="secondary">#FF6F00</color>
+    <color name="surface">#FFFFFF</color>
+    <string name="app_name">SYSInv</string>
+    <string name="metricas">Métricas</string>
+    <string name="movimientos">Movimientos</string>
+    <string name="productos">Productos</string>
+    <string name="resumen">Resumen</string>
+    <string name="stock_bajo">Stock bajo</string>
+    <string name="tablas">Tablas</string>
+    <style name="Theme.SYSInv" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/secondary</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+    <style name="Theme.SYSInv.Dark" parent="android:Theme.Material.NoActionBar">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/secondary</item>
+        <item name="android:windowBackground">#121212</item>
+    </style>
+</resources>

@@ -1,0 +1,22 @@
+R_DEF: Internal format may change without notice
+local
+color background
+color on_background
+color on_surface
+color primary
+color primary_dark
+color secondary
+color surface
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string metricas
+string movimientos
+string productos
+string resumen
+string stock_bajo
+string tablas
+style Theme.SYSInv
+style Theme.SYSInv.Dark
